@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(Decor.gif);
+    background-size: contain;
 }
 
 #blocPrincipal {
@@ -68,6 +70,21 @@ section {
 
 /* ecran 6*/
 .ecran6 {
+    width: 100%;
+}
+
+/* ecran 7*/
+.ecran7 {
+    width: 100%;
+}
+
+/* ecran 8*/
+.ecran8 {
+    width: 100%;
+}
+
+/* ecran 9*/
+.ecran9 {
     width: 100%;
 }
 
@@ -162,8 +179,8 @@ a {
 }
 
 .blocGris {
-    width: 100%;
     position: absolute;
+    width: 100%;
     width: 474px;
     height: 1024px;
     left: 1429px;
@@ -176,4 +193,430 @@ a {
 
 .objectifs {
     font-size: 9rem;
+}
+
+.Passions {
+    position: absolute;
+    width: 494px;
+    height: 159px;
+    left: 1450px;
+    top: 2100px;
+    font-weight: 400;
+    font-size: 9rem;
+}
+
+.competences {
+    /* Mes compétences */
+
+    position: absolute;
+    width: 746px;
+    height: 220px;
+    left: 0px;
+    top: 3150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+}
+
+.contact {
+    position: absolute;
+    width: 629px;
+    height: 123px;
+    left: 117px;
+    top: 3500px;
+    background: #D9D9D9;
+    font-size: 80px;
+    text-align: center;
+}
+
+.HTML {
+    position: absolute;
+    width: 463px;
+    height: 96px;
+    left: 1150px;
+    top: 3200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+}
+
+.bordureBarreHTML {
+    position: absolute;
+    width: 312px;
+    height: 82px;
+    left: 1150px;
+    top: 3300px;
+    background: #3AAC45;
+}
+
+.bordureBarreHTMLNoir {
+    position: absolute;
+    width: 140px;
+    height: 82px;
+    left: 1462px;
+    top: 3300px;
+    background: #000000;
+}
+
+.CSS {
+    position: absolute;
+    width: 463px;
+    height: 96px;
+    left: 1150px;
+    top: 3450px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+}
+
+.bordureBarreCSS {
+    position: absolute;
+    width: 263px;
+    height: 105px;
+    left: 1150px;
+    top: 3550px;
+    background: #2EB9C1;
+}
+
+.bordureBarreCSSNoir {
+    position: absolute;
+    width: 202px;
+    height: 105px;
+    left: 1413px;
+    top: 3550px;
+    background: #000000;
+}
+
+.JavaScript {
+    position: absolute;
+    width: 463px;
+    height: 96px;
+    left: 1150px;
+    top: 3700px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+}
+
+.bordureBarreJS {
+    position: absolute;
+    width: 211px;
+    height: 98px;
+    left: 1150px;
+    top: 3850px;
+    background: #D5B543;
+}
+
+.bordureBarreJSNoir {
+    position: absolute;
+    width: 256px;
+    height: 100px;
+    left: 1361px;
+    top: 3850px;
+    background: #000000;
+}
+
+.FondCV {
+    background-image: url("FondCV.jpg");
+    width: 900px;
+    height: 300px;
+    top: 3950px;
+}
+
+.CVH2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 9rem;
+    width: 900px;
+    height: 300px;
+}
+
+.cadreCV {
+    position: absolute;
+    width: 901px;
+    height: 120px;
+    left: 269px;
+    background: #31B8D6;
+    font-size: 7rem;
+}
+
+.parcoursformation {
+    position: absolute;
+    height: 120px;
+    left: 269px;
+    font-size: 7rem;
+}
+
+.blabla1 {
+    position: absolute;
+    width: 473px;
+    height: 498px;
+    left: 93px;
+    top: 5200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.blabla2 {
+    position: absolute;
+    width: 506px;
+    height: 368px;
+    left: 803px;
+    top: 5200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.blabla3 {
+    position: absolute;
+    width: 473px;
+    height: 498px;
+    left: 93px;
+    top: 6000px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.mesExperiences {
+    position: absolute;
+    height: 120px;
+    left: 269px;
+    font-size: 7rem;
+}
+
+.blabla4 {
+    position: absolute;
+    width: 473px;
+    height: 498px;
+    left: 1000px;
+    top: 6000px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.portfolio {
+    position: absolute;
+    height: 120px;
+    left: 269px;
+    font-size: 7rem;
+}
+
+.pad {
+    position: absolute;
+    top: 7000px;
+    width: 215px;
+    height: 190px;
+    left: 171px;
+    background: #D9D9D9;
+}
+
+.pad2 {
+    position: absolute;
+    top: 7000px;
+    width: 215px;
+    height: 190px;
+    left: 500px;
+    background: #D9D9D9;
+}
+
+.pad3 {
+    position: absolute;
+    top: 7000px;
+    width: 215px;
+    height: 190px;
+    left: 825px;
+    background: #D9D9D9;
+}
+
+.pad4 {
+    position: absolute;
+    top: 7300px;
+    width: 215px;
+    height: 190px;
+    left: 171px;
+    background: #D9D9D9;
+}
+
+.pad5 {
+    position: absolute;
+    top: 7300px;
+    width: 215px;
+    height: 190px;
+    left: 500px;
+    background: #D9D9D9;
+}
+
+.pad6 {
+    position: absolute;
+    top: 7300px;
+    width: 215px;
+    height: 190px;
+    left: 825px;
+    background: #D9D9D9;
+}
+
+.contactez {
+    position: absolute;
+    height: 120px;
+    left: 1000px;
+    font-size: 7rem;
+}
+
+.autreblabla {
+    position: absolute;
+    width: 473px;
+    height: 498px;
+    left: 100px;
+    top: 7800px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.namee {
+position: absolute;
+width: 546px;
+height: 90px;
+left: 950px;
+top: 7800px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+color: #000000;
+}
+
+.horizon {
+position: absolute;
+width: 549px;
+height: 0px;
+left: 950px;
+top: 7950px;
+border: 1px solid #000000;
+transform: rotate(180deg);
+}
+
+
+.namee2 {
+position: absolute;
+width: 546px;
+height: 90px;
+left: 950px;
+top: 8100px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+color: #000000;
+}
+
+.horizon2 {
+    position: absolute;
+    width: 549px;
+    height: 0px;
+    left: 950px;
+    top: 8250px;
+    border: 1px solid #000000;
+    transform: rotate(180deg);
+    }
+
+.namee3 {
+position: absolute;
+width: 546px;
+height: 90px;
+left: 950px;
+top: 8400px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+color: #000000;
+}
+
+.horizon3 {
+    position: absolute;
+    width: 549px;
+    height: 0px;
+    left: 950px;
+    top: 8550px;
+    border: 1px solid #000000;
+    transform: rotate(180deg);
+    }
+
+.lignefin {
+    position: absolute;
+    width: 1440px;
+    height: 0px;
+    top: 8750px;
+    border: 1px solid #000000;
+}
+
+.rond1 {
+position: absolute;
+width: 81px;
+height: 77px;
+left: 284px;
+top: 8850px;
+background: #D9D9D9;
+}
+
+.rond2 {
+position: absolute;
+width: 81px;
+height: 77px;
+left: 500px;
+top: 8850px;
+background: #D9D9D9;
+}
+
+.rond3 {
+position: absolute;
+width: 81px;
+height: 77px;
+left: 700px;
+top: 8850px;
+background: #D9D9D9;
+}
+
+.rond4 {
+position: absolute;
+width: 81px;
+height: 77px;
+left: 925px;
+top: 8850px;
+background: #D9D9D9;
 }
