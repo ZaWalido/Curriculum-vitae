@@ -20,3 +20,23 @@ function changerCurseur(numLien)
 {
  lienMenu[numLien].style.cursor = 'pointer';
 }
+
+var lemessage = document.getElementById('result-form');
+var nom = document.getElementById("nom");
+var email = document.getElementById("email");
+var telephone = document.getElementById("telephone");
+var message = document.getElementById("message");
+window.onload = function() {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+event.preventDefault();
+// these IDs from the previous steps
+emailjs.sendForm('service_7x8jgnd', 'template_p2o07e8', this)
+.then(function() {
+console.log('SUCCESS!');
+success();
+}, function(error) {
+console.log('FAILED...', error);
+failed();
+});
+});
+}

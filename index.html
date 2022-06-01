@@ -9,13 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/097058085d.js" crossorigin="anonymous"></script>
     <title>Mon cv en ligne.</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('7GOaesnLSWbpWxYdX');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
     <div id="blocPrincipal">
         <section class="navigation">
             <nav class="fullscreen">
-            <input type="checkbox" id="check">
+                <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fas fa-navicon fa-2x"></i>
                 </label>
@@ -137,15 +160,39 @@
         <div class="ecran ecran8">
             <h2>Ecran 8</h2>
             <div class="portfolio">PORTFOLIO</div>
-            <div class="pad"></div>
-            <div class="pad2"></div>
-            <div class="pad3"></div>
+            <div class="contain-portofolio">
+                <div class="portofolio">
+                    <div class="photo"></div>
+                    <h2>La musique</h2>
+                    <p>Passion numéro une sans hésitation</p>
+                </div>
+                <div class="portofolio">
+                    <div class="photo"></div>
+                    <h2>Pro' e-sport</h2>
+                    <p>Professionnel e-sport en jeu de combat, très varié mais toujours aussi fort</p>
+                </div>
+                <div class="portofolio">
+                    <div class="photo"></div>
+                    <h2>Pianiste</h2>
+                    <p>Pianiste depuis 11 ans, autodidacte</p>
+                </div>
+                <div class="portofolio">
+                    <div class="photo"></div>
+                    <h2>Compositeur</h2>
+                    <p>Alors attention, toujours autodidacte</p>
+                </div>
+                <div class="portofolio">
+                    <div class="photo"></div>
+                    <h2>Karatéka</h2>
+                    <p>1er Dan de Karaté, style Shotokan-ryu</p>
+                </div>
+                <div class="portofolio">
+                    <div class="photo"></div>
+                    <h2>Littéraire</h2>
+                    <p>Rat de bibliotèques, amoureux de la philosophie</p>
+                </div>
+            </div>
 
-            <br>
-
-            <div class="pad4"></div>
-            <div class="pad5"></div>
-            <div class="pad6"></div>
         </div>
 
 
@@ -157,14 +204,60 @@
                 blablablablablabla
                 blablablablablablabla</h2>
             <h2 class="namee">Nom</h2>
+            <input type="text" name="nom" id="nom" required minlength="3" maxlength="20" class="barrenom">
             <div class="horizon"></div>
             <h2 class="namee2">Mail</h2>
+            <input type="email" name="email" id="email" minlength="6" maxlength="50" class="barremail">
             <div class="horizon2"></div>
-            <h2 class="namee3">Message</h2>
+            <h2 class="namee3">Téléphone</h2>
+            <input type="text" name="telephone" id="telephone" class="barretel">
             <div class="horizon3"></div>
+            <h2 class="namee4">Message</h2>
+            <input type="text" name="telephone" id="telephone" class="barremessage">
+            <div class="horizon3"></div>
+            <div>
+                <input class="envoyer" id="submit" type="submit" value="Envoyer">
+            </div>
+
 
             <div class="lignefin"></div>
         </div>
+
+        <!-- <div id="result-form">
+        </div>
+        <div class="contain-tout">
+            <div class="form-container">
+                <form method="post" id="contact-form">
+                    <div>
+                        <label for="nom">Nom : *</label>
+                        <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="email">Adresse email : *</label>
+                        <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="telephone">Téléphone :</label>
+                        <input type="text" name="telephone" id="telephone">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="message">Message : *</label>
+                        <textarea name="message" id="message" name="message" required minlength="10"
+                            maxlength="250"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <input class="btn" id="submit" type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="iphone.jpg" alt="image contact">
+            </div>
+        </div> -->
 
         <footer>
             <div class="rond1"></div>

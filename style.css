@@ -435,6 +435,93 @@ a {
     font-size: 7rem;
 }
 
+.contain-portofolio {
+    width: 90%;
+    height: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contain-portofolio div {
+    width: 30%;
+    height: 40%;
+    margin: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 2px #141414;
+    border-radius: 10px;
+}
+
+.portofolio .photo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto 20px auto;
+
+}
+
+.portofolio:nth-child(1) .photo {
+    background: lightcoral;
+    background-image: url('Walid_gratte.png');
+    background-size: cover;
+    width: 260px;
+    height: 170px;
+}
+
+.portofolio:nth-child(2) .photo {
+    background: lightblue;
+    background-image: url('3rdstrike.png');
+    background-size: cover;
+    width: 260px;
+    height: 170px;
+}
+
+.portofolio:nth-child(3) .photo {
+    background: lawngreen;
+    background-image: url('piano.jpg');
+    background-size: cover;
+    width: 260px;
+    height: 170px;
+}
+
+.portofolio:nth-child(4) .photo {
+    background: lightcoral;
+    background-image: url('synthesia.jpg');
+    background-size: cover;
+    width: 260px;
+    height: 170px;
+}
+
+.portofolio:nth-child(5) .photo {
+    background: lightblue;
+    background-image: url('YokoGeri.jpg');
+    background-size: cover;
+    width: 260px;
+    height: 170px;
+}
+
+.portofolio:nth-child(6) .photo {
+    background: lawngreen;
+    background-image: url('livre.jpg');
+    background-size: cover;
+    width: 260px;
+    height: 170px;
+}
+
+.portofolio h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.portofolio p {
+    text-align: justify;
+    color: rgb(54, 54, 53);
+}
+
+
 .pad {
     position: absolute;
     top: 7000px;
@@ -573,6 +660,20 @@ a {
     color: #000000;
 }
 
+.namee4 {
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8700px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
 .horizon3 {
     position: absolute;
     width: 549px;
@@ -585,9 +686,9 @@ a {
 
 .lignefin {
     position: absolute;
-    width: 1440px;
+    width: 1740px;
     height: 0px;
-    top: 8750px;
+    top: 9050px;
     border: 1px solid #000000;
 }
 
@@ -596,7 +697,7 @@ a {
     width: 81px;
     height: 77px;
     left: 284px;
-    top: 8850px;
+    top: 9150px;
     background: #D9D9D9;
 }
 
@@ -605,7 +706,7 @@ a {
     width: 81px;
     height: 77px;
     left: 500px;
-    top: 8850px;
+    top: 9150px;
     background: #D9D9D9;
 }
 
@@ -614,7 +715,7 @@ a {
     width: 81px;
     height: 77px;
     left: 700px;
-    top: 8850px;
+    top: 9150px;
     background: #D9D9D9;
 }
 
@@ -623,7 +724,7 @@ a {
     width: 81px;
     height: 77px;
     left: 925px;
-    top: 8850px;
+    top: 9150px;
     background: #D9D9D9;
 }
 
@@ -631,7 +732,7 @@ a {
     border-radius: 50px 10px 0;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 2rem;
     color: white;
     float: right;
@@ -641,61 +742,159 @@ a {
     display: none;
 }
 
-#check{
-    display:none;
+#check {
+    display: none;
 }
 
-@media (max-width:952px){
-    label.logo{
+@media (max-width:952px) {
+    label.logo {
         font-size: 2rem;
         padding-left: 50px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 1rem;
     }
 }
 
 
-@media (max-width:858px){
-    .checkbtn{
+@media (max-width:858px) {
+    .checkbtn {
         display: block;
     }
 
-    nav{
+    nav {
         padding: 0 20px;
     }
 
-    label.logo{
+    label.logo {
         width: 90%;
         text-align: center;
         color: white;
     }
-    nav ul{
+
+    nav ul {
         display: inline-block;
-        position:fixed;
+        position: fixed;
         width: 100%;
         height: 100vh;
-        background: #ffffff; /* couleur de fond du menu */
-        top: 180px;       /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
+        background: #ffffff;
+        /* couleur de fond du menu */
+        top: 180px;
+        /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
         left: -100%;
         text-align: center;
         transition: all .5s;
         width: 100%;
         margin: 0;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 2rem;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 1.5rem;
     }
-    a:hover,a.active{
+
+    a:hover,
+    a.active {
         background: none;
-        color: #05be4c; /* couleur des liens du menu */
+        color: #05be4c;
+        /* couleur des liens du menu */
     }
-    #check:checked ~ ul{
-        left:0;
+
+    #check:checked~ul {
+        left: 0;
     }
-}                 
+}
+
+contain-tout{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+    .form-container{
+    width: 50%;
+    height: 100%;
+    }
+    #contact-form{
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+}
+
+.barrenom {
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 7870px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.barremail {
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8170px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.barremessage {
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8470px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.barretel {
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8770px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.envoyer {
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8930px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+}
