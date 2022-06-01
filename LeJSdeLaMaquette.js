@@ -21,6 +21,7 @@ function changerCurseur(numLien)
  lienMenu[numLien].style.cursor = 'pointer';
 }
 
+// Ici c'est le code pour 
 var lemessage = document.getElementById('result-form');
 var nom = document.getElementById("nom");
 var email = document.getElementById("email");
@@ -40,3 +41,17 @@ failed();
 });
 });
 }
+function success(){
+    // message pour l'utilisateur
+    lemessage.innerHTML ="Message envoyé ! <br>Nous vous recontacterons dès que possible.";
+    //suppression du contenu des champs du formulaire
+    nom.value = "";
+    email.value = "";
+    telephone.value = "";
+    message.value = "";
+    }
+    function failed(){
+    lemessage.style.color = 'red';
+    lemessage.innerHTML ="Une erreur s'est produite,<br>veuillez réessayer.";
+    }
+    

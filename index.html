@@ -203,21 +203,30 @@
             <h2 class="autreblabla">Blablablablablabla
                 blablablablablabla
                 blablablablablablabla</h2>
-            <h2 class="namee">Nom</h2>
-            <input type="text" name="nom" id="nom" required minlength="3" maxlength="20" class="barrenom">
-            <div class="horizon"></div>
-            <h2 class="namee2">Mail</h2>
-            <input type="email" name="email" id="email" minlength="6" maxlength="50" class="barremail">
-            <div class="horizon2"></div>
-            <h2 class="namee3">Téléphone</h2>
-            <input type="text" name="telephone" id="telephone" class="barretel">
-            <div class="horizon3"></div>
-            <h2 class="namee4">Message</h2>
-            <input type="text" name="telephone" id="telephone" class="barremessage">
-            <div class="horizon3"></div>
-            <div>
-                <input class="envoyer" id="submit" type="submit" value="Envoyer">
-            </div>
+            <form method="post" id="contact-form">
+                <div id="result-form">
+                </div>
+                <h2 class="namee">Nom</h2>
+                <input type="text" name="nom" id="nom" required minlength="3" maxlength="20" class="barrenom">
+                <span class="error"></span>
+                <div class="horizon"></div>
+                <h2 class="namee2">Mail</h2>
+                <input type="email" name="email" id="email" minlength="6" maxlength="50" class="barremail">
+                <span class="error"></span>
+                <div class="horizon2"></div>
+                <h2 class="namee3">Téléphone</h2>
+                <input type="text" name="telephone" id="telephone" class="barretel">
+                <span class="error"></span>
+                <div class="horizon3"></div>
+                <h2 class="namee4">Message</h2>
+                <textarea name="message" id="message" name="message" required minlength="10" maxlength="250"
+                    class="barremessage"></textarea>
+                <span class="error"></span>
+                <div class="horizon3"></div>
+                <div>
+                    <input class="envoyer" id="submit" type="submit" value="Envoyer">
+                </div>
+            </form>
 
 
             <div class="lignefin"></div>
