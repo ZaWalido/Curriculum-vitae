@@ -40,11 +40,13 @@ section {
     align-items: center;
     align-content: center;
     justify-content: center;
+    box-shadow: 10px 5px 5px rgb(14, 139, 197);
 }
 
 /* ecran 2 */
 .ecran2 {
     width: 100%;
+    box-shadow: 10px 5px 5px rgb(14, 139, 197);
 }
 
 /* ecran 3*/
@@ -99,7 +101,7 @@ div .page1 {
 
 .fullscreen {
     display: flex;
-    background-image: url("BannierePage1.jpg");
+    background-image: url("banniere.jpg");
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
@@ -107,7 +109,7 @@ div .page1 {
     background-size: cover;
     width: 900px;
     height: 300px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .ligne1 {
@@ -153,7 +155,7 @@ a {
     width: 890px;
     height: 0px;
     left: 100px;
-    top: 1635px;
+    top: 1641px;
     border: 1px solid #000000;
     transform: rotate(90deg);
 }
@@ -206,8 +208,6 @@ a {
 }
 
 .competences {
-    /* Mes compétences */
-
     position: absolute;
     width: 746px;
     height: 220px;
@@ -218,6 +218,7 @@ a {
     font-weight: 400;
     font-size: 96px;
     line-height: 116px;
+    box-shadow: 10px 5px 5px rgb(14, 139, 197);
 }
 
 .contact {
@@ -348,8 +349,13 @@ a {
     width: 901px;
     height: 120px;
     left: 269px;
-    background: #31B8D6;
     font-size: 7rem;
+}
+
+.cadreCV a {
+    text-decoration: none;
+    font-size: 4rem;
+    color: black;
 }
 
 .parcoursformation {
@@ -505,42 +511,42 @@ a {
 }
 
 .namee {
-position: absolute;
-width: 546px;
-height: 90px;
-left: 950px;
-top: 7800px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 77px;
-color: #000000;
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 7800px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
 }
 
 .horizon {
-position: absolute;
-width: 549px;
-height: 0px;
-left: 950px;
-top: 7950px;
-border: 1px solid #000000;
-transform: rotate(180deg);
+    position: absolute;
+    width: 549px;
+    height: 0px;
+    left: 950px;
+    top: 7950px;
+    border: 1px solid #000000;
+    transform: rotate(180deg);
 }
 
 
 .namee2 {
-position: absolute;
-width: 546px;
-height: 90px;
-left: 950px;
-top: 8100px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 77px;
-color: #000000;
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
 }
 
 .horizon2 {
@@ -551,20 +557,20 @@ color: #000000;
     top: 8250px;
     border: 1px solid #000000;
     transform: rotate(180deg);
-    }
+}
 
 .namee3 {
-position: absolute;
-width: 546px;
-height: 90px;
-left: 950px;
-top: 8400px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 77px;
-color: #000000;
+    position: absolute;
+    width: 546px;
+    height: 90px;
+    left: 950px;
+    top: 8400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
 }
 
 .horizon3 {
@@ -575,7 +581,7 @@ color: #000000;
     top: 8550px;
     border: 1px solid #000000;
     transform: rotate(180deg);
-    }
+}
 
 .lignefin {
     position: absolute;
@@ -586,37 +592,110 @@ color: #000000;
 }
 
 .rond1 {
-position: absolute;
-width: 81px;
-height: 77px;
-left: 284px;
-top: 8850px;
-background: #D9D9D9;
+    position: absolute;
+    width: 81px;
+    height: 77px;
+    left: 284px;
+    top: 8850px;
+    background: #D9D9D9;
 }
 
 .rond2 {
-position: absolute;
-width: 81px;
-height: 77px;
-left: 500px;
-top: 8850px;
-background: #D9D9D9;
+    position: absolute;
+    width: 81px;
+    height: 77px;
+    left: 500px;
+    top: 8850px;
+    background: #D9D9D9;
 }
 
 .rond3 {
-position: absolute;
-width: 81px;
-height: 77px;
-left: 700px;
-top: 8850px;
-background: #D9D9D9;
+    position: absolute;
+    width: 81px;
+    height: 77px;
+    left: 700px;
+    top: 8850px;
+    background: #D9D9D9;
 }
 
 .rond4 {
-position: absolute;
-width: 81px;
-height: 77px;
-left: 925px;
-top: 8850px;
-background: #D9D9D9;
+    position: absolute;
+    width: 81px;
+    height: 77px;
+    left: 925px;
+    top: 8850px;
+    background: #D9D9D9;
 }
+
+a {
+    border-radius: 50px 10px 0;
+}
+
+.checkbtn{
+    font-size: 2rem;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display:none;
+}
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 2rem;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav{
+        padding: 0 20px;
+    }
+
+    label.logo{
+        width: 90%;
+        text-align: center;
+        color: white;
+    }
+    nav ul{
+        display: inline-block;
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff; /* couleur de fond du menu */
+        top: 180px;       /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 2rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #05be4c; /* couleur des liens du menu */
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}                 
